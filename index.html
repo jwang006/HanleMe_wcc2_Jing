@@ -6,86 +6,107 @@
         <!-- meta viewport tag needed to make site responsive on mobile devices https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag -->
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <title>WCC Portfolio</title>
+        <title>WCC Portfolio - HandleMe</title>
 
-        <link rel="stylesheet" href="./css/style.css">
+        <!-- including for some global styling -->
+        <link rel="stylesheet" href="../css/style.css">
 
     </head>
     <body>
-
-        <header>
-            <section class="centered-content">
-                <h1>Your Name</h1>
-                <p>A short Personal Statement. This should just be approx. four to five sentences max. It's not a CV, but rather a short statement about what conceptual elements your work engages with and what your particular brand of interdiciplinary making looks like.</p>
-                <p>Include a link to your theory blog (or a blogpost of yours) if you think it's helpful. We will not be able to read them in depth, but can skim read, all vital information for your final project must be in that documentation.</p>
+        <!-- if you have sub-pages think about adding a simple back button -->
+        <nav>
+            <a href="../">HOME</a>
+        </nav>
+        <header class="documentation-header">
+            <section class="center-text">
+                <h1>HandleMe</h1>
+                <h2>by Jing Wang</h6>
+                <p>Write a one-sentence summary of what the project is.</p> 
             </section>
-            
-
         </header>
 
-        <main>
-            <h3>Term 1</h3>
-            <section class="flex-container">
-                <div class="flex-item"> 
-                    <a href="./html-demo-page">
-                        <h4>Optional Documentation Page</h4>
-                    </a>
+        <main class="documentation-page">
+            <section>
+                <div class="responsive-video centered-content">
+                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/644036051?h=b260a3b1b0" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
                 </div>
             </section>
+            <section>
+                <h3>Introduction</h3>
+                <p>Write a short introduction, a short paragraph, giving a bit more detail about what the project is.</p>
+            </section>
+            <section>
+                <h3>Concept and Background Research</h3>
+                
+                <p>Write about the concept behind the project, in other words the creative or theoretical inspiration. Include details about any background research you may have done (don’t forget to include references in the reference section).</p>
+                <p>Consider writing about your work in relation to a creative, theoretical or computational tradition that you may be taking inspiration from, in other words think about how your work is situated in a particular making tradition. </p>
+                
+                <!-- if you have a full width image try make it not too tall -->
+                <img src="../assets/images/repeating-diagonal-lines-strip.jpeg"/>
+                
+            </section>
+            <section>
+                <h3>Technical Implementation</h3>
 
-            <h3>Term 2</h3>
-            <p>At least ONE of these projects must be designed to be exeperienced online & must be responsive (work well on mobile and desktop devices). You must have at least FOUR of your term two sketches here, for creative coding work that is not designed to live online you can use the documentation page format (see page above) & just embed a video. One of the four can be your mid-term group project. You must inlcude your push & pull activity.</p>
-            <section class="flex-container">
+                <!-- example of styling for three images, you can write your own styling -->
+                <div class="flex-container flex-basis-third">
+                    <div class="flex-item">
+                        <img src="../assets/images/repeating-diagonal-lines-square.jpeg"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../assets/images/repeating-diagonal-lines-square.jpeg"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../assets/images/repeating-diagonal-lines-square.jpeg"/>
+                    </div>
+                </div>
+                
+                <p>Write about the process of implementing your project. What technical elements or hardware are involved in your system. Write about why you made certain technical or design decisions etc. </p>
+            
+                <!-- example of styling for three images, you can write your own styling -->
+                <div class="flex-container flex-basis-half">
+                    <div class="flex-item">
+                        <img src="../assets/images/repeating-diagonal-lines-rect.jpeg"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../assets/images/repeating-diagonal-lines-rect.jpeg"/>
+                    </div>
+                </div>
 
-                <div class="flex-item"> 
-                    <a href="https://rebecca-aston.github.io/hypertext-concrete-poetry/">
-                        <h4>1. Hypertext Concrete Poem</h4>
-                    </a>
+                <!-- default flex item is for 4 & follows media query styling for home page -->
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <img src="../assets/images/repeating-diagonal-lines-rect.jpeg"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../assets/images/repeating-diagonal-lines-rect.jpeg"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../assets/images/repeating-diagonal-lines-rect.jpeg"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../assets/images/repeating-diagonal-lines-rect.jpeg"/>
+                    </div>
                 </div>
          
-                <div class="flex-item"> 
-                    <a href="https://rebecca-aston.github.io/simple-responsive-3D/">
-                        <h4>2. Pull & Push (must be present) </h4>
-                    </a>
-                </div>
-
-                <div class="flex-item"> 
-                    <a href="https://rebecca-aston.github.io/creatures-web-app-simple/">
-                        <h4>3. Creatures Web App</h4>
-                    </a>
-                </div>
-
-                <div class="flex-item"> 
-                    <a href="https://remote-painter.glitch.me/">
-                        <h4>4. Remote Painter</h4>
-                    </a>
-                </div>
-
-                <!-- Keep adding per week -->
-                
-            </section> 
-
-
-            <h3>Final Project</h3>
-            <section class="flex-container">
-                <div class="flex-item"> 
-                    <a href="./final-project-documentation">
-                        <h4>Final Project Documentation</h4>
-                    </a>
-                </div>
-                <div class="flex-item"> 
-                    <a href="https://rebecca-aston.github.io/creatures-web-app-simple/">
-                        <h4>Final Project Link (IF online work)</h4>
-                    </a>
-                </div>
             </section>
-
+            <section>
+                <h3>Reflection and Future Development</h3>
+                <p>Reflect on how the project went, what went well, what you learnt etc. Based on these reflections, conclude with how you would further develop this project if you were to make another version or how you would further develop your ideas.</p>
+            </section>
+            <section>
+                <h3>References</h3>
+                <ul>
+                    <li>Technical Reference example. Include link where possible.</li>
+                    <li>Conceptual Reference example. Include link where possible.</li>
+                </ul>
+            </section>
         </main>
-        <footer>
-           <!-- normally information like contact details etc  -->
-           <!-- read more about semantic HTML https://www.w3schools.com/html/html5_semantic_elements.asp -->
-           
-        </footer>
 
+        <footer>
+            <!-- normally information like contact details etc  -->
+            <!-- read more about semantic HTML https://www.w3schools.com/html/html5_semantic_elements.asp -->
+            
+         </footer>
     </body>
 </html>
